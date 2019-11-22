@@ -3,7 +3,7 @@ import math
 import random
 
 
-AMOUNT_OF_MATHS = 8
+AMOUNT_OF_MATHS = 20
 MAX_WORKERS = 8
 
 
@@ -15,10 +15,11 @@ def do_maths():
 
 def main():
     pool = ProcessPoolExecutor(max_workers=MAX_WORKERS)
-    procs = []
+    futures = []
     for _ in range(AMOUNT_OF_MATHS):
-        procs.append(pool.submit(do_maths))
-    for proc in as_completed(procs):
+        futures.append(pool.submit(do_maths))
+
+    for proc in as_completed(futures):
         print(proc.result())
 
 

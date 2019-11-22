@@ -17,10 +17,7 @@ def ssh_task(device):
     print(f"Thread Started: {device['host']}")
     net_connect = ConnectHandler(**device)
     output = net_connect.send_command("show ip arp")
-    return {
-        "name": device["host"],
-        "output": output
-    }
+    return {"name": device["host"], "output": output}
 
 
 def main():
