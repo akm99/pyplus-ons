@@ -17,7 +17,7 @@ token = "Token {}".format(token)
 That environment variable will contain the NetBox token to use for authenticating
 to NetBox.
 
-1. Using the Python requests libary and an HTTP GET, retrieve the information from the following URL:
+1. Using the Python requests library and an HTTP GET, retrieve the information from the following URL:
 
 ```
 url = "https://netbox.lasthop.io/api/dcim/devices"
