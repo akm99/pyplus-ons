@@ -5,7 +5,7 @@ Purpose of this example is to demonstrate multiple processes
 Use top or activity/system monitor to see multiple instances
 of Python being ran.
 """
-from concurrent.futures import ProcessPoolExecutor, wait
+from concurrent.futures import ThreadPoolExecutor, wait
 import math
 import random
 
