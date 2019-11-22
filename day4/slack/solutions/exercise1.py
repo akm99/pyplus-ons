@@ -22,7 +22,7 @@ def main():
 
     print()
 
-    # Get list of channels; authenticate with token encoded in url
+    # Get list of channels; authenticate with token encoded in payload
     data = {"token": SLACK_TOKEN}
     resp = requests.post(f"{SLACK_BASE_URL}/channels.list", data=data)
     pprint(resp.json())
