@@ -4,7 +4,6 @@ import random
 
 
 AMOUNT_OF_MATHS = 8
-# Note: max_workers  will default to num processors on maching * 5 if not given
 MAX_WORKERS = 8
 
 
